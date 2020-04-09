@@ -1,3 +1,11 @@
+IMG_NAME=jvanderaa/macstart
+IMG_VERSION=0.0.1
+.DEFAULT_GOAL := lint
+
+.PHONY: build
+build:
+	docker build -t $(IMG_NAME):$(IMG_VERSION) .
+
 .PHONY: start_mac
 start_mac:
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"

@@ -1,3 +1,4 @@
+---
 - name: Install local packages for setup
   connection: local
   hosts: localhost

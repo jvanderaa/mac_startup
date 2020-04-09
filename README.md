@@ -12,4 +12,4 @@ Will leverage a couple of components to get up and running:
 ### Note
 
 The `make` process is untested right now. The Ansible portion is what I use as my daily updating.
-Contributions are welcome!
+Contributions are welcome! Please follow Git Flow.

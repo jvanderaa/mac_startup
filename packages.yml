@@ -1,0 +1,14 @@
+- name: Install local packages for setup
+  connection: local
+  hosts: localhost
+  tasks:
+    - name: "TASK 1: Install Homebrew packages, make sure up to date"
+      homebrew:
+        name: ['zsh-autosuggestions', 'curl', 'zsh-completions', 'zsh-syntax-highlighting', 'wget', 'jq', 'graphviz', 'jpeg', 'ffmpeg', 'nmap', 'openssl', 'telnet', 'mtr', 'iperf', 'ipcalc', 'iperf3']
+        state: latest
+        update_homebrew: yes
+
+    - name: "TASK 2: Install Casks"
+      homebrew_cask:
+        name: ['docker', 'visual-studio-code', 'iterm2', 'wireshark', 'slack', 'postman', 'lastpass', 'vagrant', 'webex-teams', 'tunnelblick', 'vagrant']
+        state: latest

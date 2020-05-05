@@ -11,5 +11,7 @@
 
     - name: "TASK 2: Install Casks"
       homebrew_cask:
-        name: ['docker', 'visual-studio-code', 'iterm2', 'wireshark', 'slack', 'postman', 'lastpass', 'vagrant', 'webex-teams', 'tunnelblick', 'vagrant']
+        name: ['docker', 'visual-studio-code', 'iterm2', 'wireshark', 'slack', 'postman', 'lastpass', 'webex-teams', 'tunnelblick', 'vagrant']
         state: latest
+      become: yes
+      become_method: sudo

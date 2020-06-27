@@ -5,13 +5,41 @@
   tasks:
     - name: "TASK 1: Install Homebrew packages, make sure up to date"
       homebrew:
-        name: ['zsh-autosuggestions', 'curl', 'zsh-completions', 'zsh-syntax-highlighting', 'wget', 'jq', 'graphviz', 'jpeg', 'ffmpeg', 'nmap', 'openssl', 'telnet', 'mtr', 'iperf', 'ipcalc', 'iperf3', 'gh']
+        name: 
+          - zsh-autosuggestions
+          - curl
+          - zsh-completions
+          - zsh-syntax-highlighting
+          - wget
+          - jq
+          - graphviz
+          - jpeg
+          - ffmpeg
+          - nmap
+          - openssl
+          - telnet
+          - mtr
+          - iperf
+          - ipcalc
+          - iperf3
+          - gh
+          - https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb
         state: latest
         update_homebrew: yes
 
     - name: "TASK 2: Install Casks"
       homebrew_cask:
-        name: ['docker', 'visual-studio-code', 'iterm2', 'wireshark', 'slack', 'postman', 'lastpass', 'webex-teams', 'tunnelblick', 'vagrant']
+        name:
+          - docker
+          - visual-studio-code
+          - iterm2
+          - wireshark
+          - slack
+          - postman
+          - lastpass
+          - webex-teams
+          - tunnelblick
+          - vagrant
         state: latest
       become: yes
       become_method: sudo

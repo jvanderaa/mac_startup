@@ -23,6 +23,11 @@
           - ipcalc
           - iperf3
           - gh
+          - tree
+          - openconnect
+          - inetutils
+          - docker-compose
+          - go
           - https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb
         state: latest
         update_homebrew: yes

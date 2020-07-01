@@ -10,9 +10,10 @@ build:
 start_mac:
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 	brew install python@3.7
-	pip3 install ansible==2.9.6 --user
+	pip3 install ansible==2.9.10 --user
 	brew install git
-	ansible-playbook install_packages.yml
+	git clone https://github.com/jvanderaa/mac_startup.git
+	ansible-playbook mac_startup/install_packages.yml
 
 .PHONY: lint
 lint:

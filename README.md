@@ -11,9 +11,15 @@ Will leverage a couple of components to get up and running:
 
 ## PROCESS
 
-1. Git clone repo to your mac
-2. Execute `ansible-playbook packages.yml` to install packages via HomeBrew
-   1. Second task will prompt for your sudo password, **do not add become/become method to the playbook**
+1. Install Xcode Comamnd Line Utilities: `xcode-select --install`
+2. Copy Makefile to directory of choice to execute from
+3. Execute `make start_mac` to:
+   1. Install HomeBrew
+   2. Install Python 3.7
+   3. Pip install Ansible 2.9.10
+   4. Install Git from Homebrew
+   5. Clone this repo to use the playbook
+   6. Execute Ansible Playbook Second task will prompt for your sudo password, **do not add become/become method to the playbook**
 
 ### Note
 

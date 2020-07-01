@@ -5,7 +5,30 @@
   tasks:
     - name: "TASK 1: Install Homebrew packages, make sure up to date"
       homebrew:
-        name: ['zsh-autosuggestions', 'curl', 'zsh-completions', 'zsh-syntax-highlighting', 'wget', 'jq', 'graphviz', 'jpeg', 'ffmpeg', 'nmap', 'openssl', 'telnet', 'mtr', 'iperf', 'ipcalc', 'iperf3', 'gh', 'tree', 'openconnect', 'inetutils', 'docker-compose', 'go', 'https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb']
+        name: 
+          - zsh-autosuggestions
+          - curl
+          - zsh-completions
+          - zsh-syntax-highlighting
+          - wget
+          - jq
+          - graphviz
+          - jpeg
+          - ffmpeg
+          - nmap
+          - openssl
+          - telnet
+          - mtr
+          - iperf
+          - ipcalc
+          - iperf3
+          - gh
+          - tree
+          - openconnect
+          - inetutils
+          - docker-compose
+          - go
+          - https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb
         state: latest
         update_homebrew: yes
 
